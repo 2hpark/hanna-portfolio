@@ -23,9 +23,13 @@
       font-style: normal;
       }
       */
+      body {
+        
+      }
       .wrapper {
-      max-width: 1200px;
-      margin: 0 auto; /* centres the wrapper on the page */
+      width: 1200px;
+      margin: 0 auto;
+      background: white;
       }
       
       nav {
@@ -37,28 +41,81 @@
       nav ul {
       list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 60px;
       margin: 0;
       padding: 0;
+      padding-right: 40px;
+      padding-top: 20px;
       margin-left: auto
       }
 
       nav ul a {
       text-decoration: none;
-      color: teal;
-      border: 2px solid lightblue;
+      font-family: "Englebert", sans-serif;
+      color: #DB5893;
+      background:#D0EDEF;
+      /*border: 2px solid lightblue;*/
       padding: 5px 12px;
-      font-size: 0.9em;
+      font-size: 1.5em;
       }
       
       h1 {
         font-family: "Henny Penny", serif;
-        font-size: 85px;
+        font-size: 75px;
       }
       
       h2 {
         font-family: "Henny Penny", serif;
-        font-size: 54px;
+        font-size: 45px;
+      }
+      
+      #hero {
+      position: relative; /*AI (Claude) Assisted*/
+      margin-top: -80px;
+      }
+
+      #hero-text {
+      position: absolute; /* lifts the text out of the normal flow */
+      top: 0;
+      left: 0;
+      padding: 100px;
+      padding-top: 170px;
+      z-index: 1; /* makes sure text sits on top of the image */
+      }
+
+      #hero-image {
+      width: 60%;
+      display: block;
+      margin-left: auto;
+      }
+      
+      .circle {
+      border-radius: 50%;
+      position: absolute;
+      }
+
+      .circle.teal {
+      width: 80px;
+      height: 80px;
+      background-color: #D0EDEF;
+      top: 400px;
+      left: 0px;
+      }
+
+      .circle.yellow {
+      width: 40px;
+      height: 40px;
+      background-color: #F1FF94;
+      top: 370px;
+      left: 260px;
+      }
+
+      .circle.pink {
+      width: 50px;
+      height: 50px;
+      background-color: #DB5893;
+      top: 190px;
+      left: 640px;
       }
     </style>
   </head>
@@ -67,14 +124,22 @@
     <nav>
       <!--<div id="logo">HP</div>-->
       <ul>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="arts.html">My Arts</a></li>
-        <li><a href="photos.html">Photos</a></li>
+        <li style="transform: rotate(4deg);"><a href="about.html">About Me</a></li>
+        <li style="transform: rotate(-4deg);"><a href="arts.html">My Arts</a></li>
+        <li style="transform: rotate(2deg);"><a href="photos.html">Photos</a></li>
       </ul>
     </nav>
     
-    <h2 style="color: #733362;">Hanna Park's</h2>
-    <h1 style="color: #733362;">Creative Space</h1>
+    <div id="hero">
+      <div id="hero-text">
+          <h2 style="color: #733362;">Hanna Park's</h2>
+          <h1 style="color: #733362; padding-left: 50px; margin-top: -80px;">Creative Space</h1>
+      </div>
+      <img id="hero-image" src="content/Homepage_Art.png" alt="girl with a skirt">
+      <div class="circle teal"></div>
+      <div class="circle yellow"></div>
+      <div class="circle pink"></div>
+    </div>
     </div>
   </body>
 </html>
