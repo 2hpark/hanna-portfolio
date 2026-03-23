@@ -88,11 +88,7 @@
       display: block;
       margin-left: auto;
       }
-      
-      #hero-image:hover {
-      width: 70%;
-      }
-      
+         
       #section {
       position: relative;
       background: #D0EDEF;
@@ -135,6 +131,63 @@
       top: 650px;
       left: 140px;
       }
+      
+      #clothing-section {
+      text-align: center;
+      padding: 60px 20px;
+      }
+
+      #hover-hint {
+      color: #DB5893;
+      font-family: "Englebert", cursive;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      }
+
+      .clothing-container {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      align-items: flex-end;
+      }
+
+      .clothing-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+      position: relative; 
+      }
+
+      .clothing-item img {
+      width: 300px;
+      transition: transform 0.3s ease;
+      }
+      
+      /* AI (CLaude) Assisted */
+      .clothing-label {
+      position: absolute; 
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      opacity: 0;
+      color: #DB5893;
+      font-family: "Englebert", cursive;
+      font-size: 1.5em;
+      background: white; 
+      padding: 5px 12px;
+      transition: opacity 0.3s ease;
+      white-space: nowrap; 
+      z-index: 2;
+      }
+
+      .clothing-item:hover img {
+      transform: rotate(10deg) scale(1.2);
+      }
+
+      .clothing-item:hover .clothing-label {
+      opacity: 1;
+      }
     </style>
   </head>
   <body>
@@ -159,7 +212,28 @@
       <div class="circle pink"></div>
       <div class="circle purple"></div>
     </div>
-    <div id="section"></div>
+    <div id="clothing-section">
+  <p id="hover-hint">Choose a clothing item!</p>
+  <div class="clothing-container">
+    
+    <div class="clothing-item">
+      <img src="content/dress.png" alt="shirt">
+      <p class="clothing-label">My Art</p>
+    </div>
+
+    <div class="clothing-item">
+      <img src="content/shirt.png" alt="shirt" style="width:350px">
+      <p class="clothing-label">Photos</p>
+    </div>
+
+    <div class="clothing-item">
+      <img src="content/socks.png" alt="socks">
+      <p class="clothing-label">About Me</p>
+    </div>
+
+  </div>
+</div>
+      
     </div>
   </body>
 </html>
