@@ -10,19 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Henny+Penny&display=swap" rel="stylesheet">
     
     <style>
-      /*
-      .henny-penny-regular {
-      font-family: "Henny Penny", system-ui;
-      font-weight: 400;
-      font-style: normal;
-      }
-      
-      .englebert-regular {
-      font-family: "Englebert", cursive;
-      font-weight: 400;
-      font-style: normal;
-      }
-      */
       body {
         background: #F1FF94;
       }
@@ -88,106 +75,7 @@
       display: block;
       margin-left: auto;
       }
-         
-      #section {
-      position: relative;
-      background: #D0EDEF;
-      height: 250px;
-      }
-      
-      .circle {
-      border-radius: 50%;
-      position: absolute;
-      }
 
-      .circle.teal {
-      width: 80px;
-      height: 80px;
-      background-color: #D0EDEF;
-      top: 400px;
-      left: 0px;
-      }
-
-      .circle.yellow {
-      width: 40px;
-      height: 40px;
-      background-color: #F1FF94;
-      top: 370px;
-      left: 260px;
-      }
-
-      .circle.pink {
-      width: 50px;
-      height: 50px;
-      background-color: #DB5893;
-      top: 190px;
-      left: 640px;
-      }
-      
-      .circle.purple {
-      width: 50px;
-      height: 50px;
-      background-color: #733362;
-      top: 650px;
-      left: 140px;
-      }
-      
-      #clothing-section {
-      text-align: center;
-      padding: 60px 20px;
-      }
-
-      #hover-hint {
-      color: #DB5893;
-      font-family: "Englebert", cursive;
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      }
-
-      .clothing-container {
-      display: flex;
-      justify-content: center;
-      gap: 60px;
-      align-items: flex-end;
-      }
-
-      .clothing-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: transform 0.3s ease;
-      position: relative; 
-      }
-
-      .clothing-item img {
-      width: 300px;
-      transition: transform 0.3s ease;
-      }
-      
-      /* AI (CLaude) Assisted */
-      .clothing-label {
-      position: absolute; 
-      top: 50%; 
-      left: 50%;
-      transform: translate(-50%, -50%); 
-      opacity: 0;
-      color: #DB5893;
-      font-family: "Englebert", cursive;
-      font-size: 2em;
-      background: white; 
-      padding: 5px 12px;
-      transition: opacity 0.3s ease;
-      white-space: nowrap; 
-      z-index: 2;
-      }
-
-      .clothing-item:hover img {
-      transform: rotate(10deg) scale(1.2);
-      }
-
-      .clothing-item:hover .clothing-label {
-      opacity: 1;
-      }
     </style>
   </head>
   <body>
@@ -203,37 +91,11 @@
     
     <div id="hero">
       <div id="hero-text">
-          <h2 style="color: #733362;">Hanna Park's</h2>
-          <h1 style="color: #733362; padding-left: 50px; margin-top: -80px;">Creative Space</h1>
+          <h1 style="color: #733362; padding-left: 50px; margin-top: 80px;">My Art</h1>
       </div>
       <img id="hero-image" src="content/Homepage_Art.png" alt="girl with a skirt">
-      <div class="circle teal"></div>
-      <div class="circle yellow"></div>
-      <div class="circle pink"></div>
-      <div class="circle purple"></div>
-    </div>
-    <div id="clothing-section">
-  <p id="hover-hint">Choose a clothing item!</p>
-  <div class="clothing-container">
-    
-    <div class="clothing-item">
-      <img src="content/dress.png" alt="shirt">
-      <p class="clothing-label">My Art</p>
-    </div>
+      </div>
 
-    <div class="clothing-item">
-      <img src="content/shirt.png" alt="shirt" style="width:350px">
-      <p class="clothing-label">Photos</p>
-    </div>
-
-    <div class="clothing-item">
-      <img src="content/socks.png" alt="socks">
-      <p class="clothing-label">About Me</p>
-    </div>
-
-  </div>
-</div>
-      
-    </div>
+  </div>     
   </body>
 </html>
