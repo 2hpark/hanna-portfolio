@@ -54,7 +54,10 @@
       
       h2 {
         font-family: "Henny Penny", serif;
-        font-size: 45px;
+        font-size: 34px;
+        text-align: center;
+        line-height: 1;
+        transform: rotate(-8deg);
       }
       
       #hero {
@@ -62,14 +65,24 @@
       margin-top: -130px;
       }
 
-      #hero-text {
-      position: absolute; /* lifts the text out of the normal flow */
-      top: 0;
-      right: 28%;
+      #hero-text1 {
+      position: absolute;
+      top: 0%;
+      right: 45%;
       padding: 100px;
       padding-top: 170px;
       z-index: 1; /*AI (Claude) Assisted*/
-      margin-top: 160px;
+      margin-top: 0px;
+      }
+      
+      #hero-text2 {
+      position: absolute;
+      top: 18%;
+      right: 20%;
+      padding: 250px;
+      padding-top: 170px;
+      z-index: 1; /*AI (Claude) Assisted*/
+      margin-top: 0px;
       }
 
       #hero-image {
@@ -93,8 +106,11 @@
     </nav>
     
     <div id="hero">
-      <div id="hero-text">
-          <h1 style="color: #DB5893; padding-left: 50px; margin-top: 80px;">My Art</h1>
+      <div id="hero-text1">
+          <h1 style="color: #B872A5; padding-left: 50px; margin-top: 80px;">Lets Explore</h1>
+      </div>
+      <div id="hero-text2">
+        <h2 style="color: #B872A5; padding-left: 160px; margin-top: 80px;">my world through my camera</h2> 
       </div>
       <img id="hero-image" src="content/MyArt_Art.png" alt="girl with a skirt">
       </div>
