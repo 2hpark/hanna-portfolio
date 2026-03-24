@@ -17,13 +17,15 @@
       width: 1200px;
       margin: 0 auto;
       background: white;
-      overflow: hidden;
       }
       
       nav {
       display: flex;
       align-items: center;
       padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
       }
 
       nav ul {
@@ -45,6 +47,16 @@
       /*border: 2px solid lightblue;*/
       padding: 5px 12px;
       font-size: 1.5em;
+      display: inline-block; /* ← add this */
+      transition: transform 0.2s ease; /* ← add this */
+      }
+      
+      nav ul a:hover {
+      transform: scale(1.1); /* gets 20% bigger on hover */
+      }
+      
+      nav ul a:hover {
+      transform: scale(1.2); /* gets 20% bigger on hover */
       }
       
       h1 {
@@ -60,6 +72,7 @@
       #hero {
       position: relative; /*AI (Claude) Assisted*/
       margin-top: -130px;
+      overflow: hidden;
       }
 
       #hero-text {
@@ -87,7 +100,7 @@
       <!--<div id="logo">HP</div>-->
       <ul>
         <li style="transform: rotate(4deg);"><a href="about.html">About Me</a></li>
-        <li style="transform: rotate(-4deg);"><a href="arts.html">My Arts</a></li>
+        <li style="transform: rotate(-4deg);"><a href="my_art.html">My Arts</a></li>
         <li style="transform: rotate(2deg);"><a href="photos.html">Photos</a></li>
       </ul>
     </nav>
