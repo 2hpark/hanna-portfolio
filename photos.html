@@ -156,12 +156,23 @@
       }
       
       
-    #photo-viewer {
+   #photo-viewer {
   display: flex;
   height: 700px;
   margin: 40px 0;
   gap: 0;
-  margin-top: -170px
+  width: 100%; /* make sure it fits inside wrapper */
+  overflow: hidden; /* prevent sidebar from spilling out */
+}
+      
+  #photo-sidebar {
+  width: 150px; /* make it a bit narrower */
+  min-width: 150px; /* stops it from shrinking */
+  background: white;
+  border-left: 1px solid #eee;
+  padding: 15px;
+  overflow-y: auto;
+  margin-top: 0; /* remove the margin-top */
 }
 
 /* LEFT SIDE - main preview + thumbnails */
@@ -195,9 +206,22 @@
   display: flex;
   gap: 8px;
   padding: 10px;
-  overflow-x: auto;
+  overflow-x: scroll; /* change auto to scroll so scrollbar always shows */
   background: #eee;
   align-items: center;
+  scroll-behavior: smooth;
+  /* style the scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #DB5893 #eee;
+}
+
+/* for Chrome */
+#thumbnail-strip::-webkit-scrollbar {
+  height: 6px;
+}
+#thumbnail-strip::-webkit-scrollbar-thumb {
+  background: #DB5893;
+  border-radius: 3px;
 }
 
 #thumbnail-strip img {
@@ -325,8 +349,8 @@
       'content/stlucia car.JPG',
       'content/nova scotia field2.jpg',
       'content/novascotia ocean.jpg',
-      'content/nova scotia field.jpg',
-      'content/fish in river.JPG',
+      /*'content/nova scotia field.jpg',
+      'content/fish in river.JPG',*/
     ],
     nature: [
       'content/tree on lake.JPG',
