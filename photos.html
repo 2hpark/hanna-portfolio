@@ -210,6 +210,7 @@
   background: #eee;
   align-items: center;
   scroll-behavior: smooth;
+  background: #D0EDEF;
   /* style the scrollbar */
   scrollbar-width: thin;
   scrollbar-color: #DB5893 #eee;
@@ -243,11 +244,11 @@
 /* RIGHT SIDEBAR */
 #photo-sidebar {
   width: 200px;
-  background: white;
   border-left: 1px solid #eee;
   padding: 20px;
   overflow-y: auto;
   margin-top: 50px;
+  background: $DB5893;
 }
 
 #photo-sidebar h3 {
@@ -263,7 +264,7 @@
   display: block;
   width: 100%;
   text-align: left;
-  background: none;
+  background: white;
   border: none;
   font-family: "Englebert", cursive;
   color: #733362;
@@ -324,7 +325,7 @@
 
   <!-- Right: sidebar -->
   <div id="photo-sidebar">
-    <h3>Albums</h3>
+    <h2 style="color: #733362">Albums</h2>
     <button class="album-btn active" onclick="loadAlbum('street')">Landscapes</button>
     <button class="album-btn" onclick="loadAlbum('nature')">Night time</button>
     <button class="album-btn" onclick="loadAlbum('portraits')">Sights</button>
