@@ -28,6 +28,20 @@
       top: 0;
       z-index: 10;
       }
+      
+      #logo img {
+      height: 60px; /* adjust this to whatever size looks right */
+      width: auto;
+      transition: transform 0.2s ease;
+      }
+
+      #logo img:hover {
+      transform: scale(1.1);
+      }
+
+      #logo {
+      text-decoration: none;
+      }
 
       nav ul {
       list-style: none;
@@ -274,7 +288,9 @@
   <body>
     <div class="wrapper">
     <nav>
-      <!--<div id="logo">HP</div>-->
+      <a href="index.html" id="logo">
+        <img src="content/logo.png" alt="HP logo">
+      </a>
       <ul>
         <li style="transform: rotate(4deg);"><a href="about.html">About Me</a></li>
         <li style="transform: rotate(-4deg);"><a href="my_art.html">My Arts</a></li>
