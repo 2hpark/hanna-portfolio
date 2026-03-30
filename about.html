@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Hanna Park's Creative Space</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Henny+Penny&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        background: #F1FF94;
+      }
+      .wrapper {
+      width: 1200px;
+      margin: 0 auto;
+      background: white;
+      }
+      
+      nav {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      }
+      
+      #logo img {
+      height: 60px; /* adjust this to whatever size looks right */
+      width: auto;
+      transition: transform 0.2s ease;
+      }
+
+      #logo img:hover {
+      transform: scale(1.1);
+      }
+
+      #logo {
+      text-decoration: none;
+      }
+
+      nav ul {
+      list-style: none;
+      display: flex;
+      gap: 60px;
+      margin: 0;
+      padding: 0;
+      padding-right: 40px;
+      padding-top: 20px;
+      margin-left: auto
+      }
+
+      nav ul a {
+      text-decoration: none;
+      font-family: "Englebert", sans-serif;
+      color: #DB5893;
+      background: #D0EDEF;
+      /*border: 2px solid lightblue;*/
+      padding: 5px 12px;
+      font-size: 1.5em;
+      display: inline-block; /* ← add this */
+      transition: transform 0.2s ease; /* ← add this */
+      }
+      
+      nav ul a:hover {
+      transform: scale(1.1); /* gets 20% bigger on hover */
+      }
+      
+      /* AI (Claude) Assisted */
+      nav ul a.current {
+      background: #DB5893; /* swap the background to pink */
+      color: white;
+      }
+      
+      h1 {
+        font-family: "Henny Penny", serif;
+        font-size: 75px;
+      }
+      
+      h2 {
+        font-family: "Henny Penny", serif;
+        font-size: 45px;
+      }
+      
+      #hero {
+      position: relative; /*AI (Claude) Assisted*/
+      margin-top: -80px;
+      }
+
+      #hero-text {
+      position: absolute; /* lifts the text out of the normal flow */
+      top: 0;
+      left: 0;
+      padding: 100px;
+      padding-top: 170px;
+      z-index: 1; /* makes sure text sits on top of the image */
+      }
+
+      #hero-image {
+      width: 60%;
+      display: block;
+      margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+    <nav>
+      <a href="index.html" id="logo">
+        <img src="content/logo.png" alt="HP logo">
+      </a>
+      <ul>
+        <li style="transform: rotate(4deg);"><a href="about.html" class="current">About Me</a></li>
+        <li style="transform: rotate(-4deg);"><a href="my_art.html">My Arts</a></li>
+        <li style="transform: rotate(2deg);"><a href="photos.html">Photos</a></li>
+      </ul>
+    </nav>
+    
+    <div id="hero">
+      <div id="hero-text">
+          <h2 style="color: #733362;">Hi!</h2>
+          <h1 style="color: #733362; margin-left: -40px; margin-top: -80px;">Nice to Meet You</h1>
+      </div>
+      <img id="hero-image" src="content/Homepage_Art.png" alt="girl with a skirt">
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -70,6 +70,12 @@
       transform: scale(1.1); /* gets 20% bigger on hover */
       }
       
+      /* AI (Claude) Assisted */
+      nav ul a.current {
+      background: #DB5893; /* swap the background to pink */
+      color: white;
+      }
+      
       h1 {
         font-family: "Henny Penny", serif;
         font-size: 75px;
@@ -294,7 +300,7 @@
       <ul>
         <li style="transform: rotate(4deg);"><a href="about.html">About Me</a></li>
         <li style="transform: rotate(-4deg);"><a href="my_art.html">My Arts</a></li>
-        <li style="transform: rotate(2deg);"><a href="photos.html">Photos</a></li>
+        <li style="transform: rotate(2deg);"><a href="photos.html" class="current">Photos</a></li>
       </ul>
     </nav>
     
@@ -376,6 +382,7 @@
       'content/lake1.JPG',
       'content/lake2.JPG',
       'content/toronto skyline.JPG',
+      'content/sea shells.JPG',
     ],
     travel: [
       'content/smash burgers.JPG',

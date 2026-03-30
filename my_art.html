@@ -27,7 +27,7 @@
       top: 0;
       z-index: 10;
       }
-
+      
       #logo img {
       height: 60px; /* adjust this to whatever size looks right */
       width: auto;
@@ -58,7 +58,6 @@
       font-family: "Englebert", sans-serif;
       color: #DB5893;
       background:#D0EDEF;
-      /*border: 2px solid lightblue;*/
       padding: 5px 12px;
       font-size: 1.5em;
       display: inline-block; /* ← add this */
@@ -67,6 +66,12 @@
       
       nav ul a:hover {
       transform: scale(1.1); /* gets 20% bigger on hover */
+      }
+      
+      /* AI (Claude) Assisted */
+      nav ul a.current {
+      background: #DB5893; /* swap the background to pink */
+      color: white;
       }
       
       h1 {
@@ -193,7 +198,7 @@
       </a>
       <ul>
         <li style="transform: rotate(4deg);"><a href="about.html">About Me</a></li>
-        <li style="transform: rotate(-4deg);"><a href="my_art.html">My Arts</a></li>
+        <li style="transform: rotate(-4deg);"><a href="my_art.html" class="current">My Arts</a></li>
         <li style="transform: rotate(2deg);"><a href="photos.html">Photos</a></li>
       </ul>
     </nav>
