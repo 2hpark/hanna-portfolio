@@ -108,48 +108,48 @@
       margin-left: -130px;
       }
       
-/* AI (Claude) Generated*/
- .marquee-section {
-  margin: 50px 0;
-  overflow: hidden;
-}
+    /* AI (Claude) Generated*/
+     .marquee-section {
+      margin: 50px 0;
+      overflow: hidden;
+    }
 
-.marquee-label {
-  font-family: "Englebert", cursive;
-  color: #DB5893;
-  font-size: 1.5em;
-  margin-top: -30px;
-  text-align: center;
-}
+    .marquee-label {
+      font-family: "Englebert", cursive;
+      color: #DB5893;
+      font-size: 1.5em;
+      margin-top: -30px;
+      text-align: center;
+    }
 
-.marquee-track {
-  display: flex;
-  align-items: flex-end; /* aligns by bottom */
-  gap: 0; /* edge to edge */
-  animation: marquee 20s linear infinite;
-  width: max-content;
-}
+    .marquee-track {
+      display: flex;
+      align-items: flex-end; /* aligns by bottom */
+      gap: 0; /* edge to edge */
+      animation: marquee 20s linear infinite;
+      width: max-content;
+    }
 
-.marquee-track:hover {
-  animation-play-state: paused;
-}
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
 
-.marquee-track img {
-  height: auto; /* all same height, width adjusts automatically */
-  width: 250px;
-  display: block;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
+    .marquee-track img {
+      height: auto; /* all same height, width adjusts automatically */
+      width: 250px;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
 
-.marquee-track img:hover {
-  opacity: 0.85;
-}
+    .marquee-track img:hover {
+      opacity: 0.85;
+    }
 
 /* lightbox */
 #lightbox {
@@ -186,6 +186,53 @@
   background: none;
   border: none;
 }
+      
+         footer {
+      display: flex;
+      justify-content: center; 
+      align-items: flex-start;
+      padding: 40px;
+      background: #F1FF94;
+      margin-top: 60px;
+      gap: 150px;
+      }
+
+      #footer-logo img {
+      height: 80px;
+      width: auto;
+      }
+
+      #footer-links, #footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      }
+
+      #footer-links h3, #footer-contact h3 {
+      font-family: "Henny Penny", serif;
+      color: #733362;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      }
+
+      #footer-links a, #footer-contact a {
+      font-family: "Englebert", cursive;
+      color: #DB5893;
+      text-decoration: none;
+      font-size: 1em;
+      transition: transform 0.2s ease;
+      display: inline-block;
+      }
+
+      #footer-links a:hover, #footer-contact a:hover {
+      transform: scale(1.05);
+      color: #B872A5; 
+      }
+      
+      #footer-links a:visited, #footer-contact a:visited {
+      color: #733362; 
+      }
+      
     </style>
   </head>
   
@@ -317,6 +364,26 @@
   });
 </script>
   
+    <footer>
+  <div id="footer-logo">
+    <img src="content/logo.png" alt="HP logo">
+  </div>
+  
+  <div id="footer-links">
+    <h3>Navigate</h3>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="my_art.html">My Arts</a>
+    <a href="photos.html">Photos</a>
+  </div>
+
+  <div id="footer-contact">
+    <h3>Contact</h3>
+    <a href="mailto:hannainthepark@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/hanna-park-453b66354/" target="_blank">LinkedIn</a>
+  </div>
+
+</footer>
   
   </body>
 </html>

@@ -10,19 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Henny+Penny&display=swap" rel="stylesheet">
     
     <style>
-      /*
-      .henny-penny-regular {
-      font-family: "Henny Penny", system-ui;
-      font-weight: 400;
-      font-style: normal;
-      }
-      
-      .englebert-regular {
-      font-family: "Englebert", cursive;
-      font-weight: 400;
-      font-style: normal;
-      }
-      */
+
       body {
         background: #F1FF94;
       }
@@ -211,6 +199,53 @@
       .clothing-item:hover .clothing-label {
       opacity: 1;
       }
+      
+     footer {
+      display: flex;
+      justify-content: center; 
+      align-items: flex-start;
+      padding: 40px;
+      background: #F1FF94;
+      margin-top: 60px;
+      gap: 150px;
+      }
+
+      #footer-logo img {
+      height: 80px;
+      width: auto;
+      }
+
+      #footer-links, #footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      }
+
+      #footer-links h3, #footer-contact h3 {
+      font-family: "Henny Penny", serif;
+      color: #733362;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      }
+
+      #footer-links a, #footer-contact a {
+      font-family: "Englebert", cursive;
+      color: #DB5893;
+      text-decoration: none;
+      font-size: 1em;
+      transition: transform 0.2s ease;
+      display: inline-block;
+      }
+
+      #footer-links a:hover, #footer-contact a:hover {
+      transform: scale(1.05);
+      color: #B872A5; 
+      }
+      
+      #footer-links a:visited, #footer-contact a:visited {
+      color: #733362; 
+      }
+      
     </style>
   </head>
   <body>
@@ -257,6 +292,26 @@
     </a>
 
   </div>
+      <footer>
+  <div id="footer-logo">
+    <img src="content/logo.png" alt="HP logo">
+  </div>
+  
+  <div id="footer-links">
+    <h3>Navigate</h3>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="my_art.html">My Arts</a>
+    <a href="photos.html">Photos</a>
+  </div>
+
+  <div id="footer-contact">
+    <h3>Contact</h3>
+    <a href="mailto:hannainthepark@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/hanna-park-453b66354/" target="_blank">LinkedIn</a>
+  </div>
+
+</footer>
 </div>
       
     </div>
