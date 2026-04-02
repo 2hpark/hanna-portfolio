@@ -187,14 +187,17 @@
   border: none;
 }
       
-         footer {
+      footer {
       display: flex;
-      justify-content: center; 
+      justify-content: center;
       align-items: flex-start;
       padding: 40px;
       background: #F1FF94;
       margin-top: 60px;
       gap: 150px;
+      margin-left: 40px; /* ← white gap on left */
+      margin-right: 40px; /* ← white gap on right */
+      margin-bottom: 40px; /* ← white gap on bottom */
       }
 
       #footer-logo img {
@@ -333,7 +336,26 @@
   <p class="marquee-label">Traditional Drawings</p>
   
 </div>
+<footer>
+  <div id="footer-logo">
+    <img src="content/logo.png" alt="HP logo">
+  </div>
+  
+  <div id="footer-links">
+    <h3>Navigate</h3>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="my_art.html">My Arts</a>
+    <a href="photos.html">Photos</a>
+  </div>
 
+  <div id="footer-contact">
+    <h3>Contact</h3>
+    <a href="mailto:hannainthepark@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/hanna-park-453b66354/" target="_blank">LinkedIn</a>
+  </div>
+
+</footer>
       
       
     </div>    
@@ -363,27 +385,6 @@
     }
   });
 </script>
-  
-    <footer>
-  <div id="footer-logo">
-    <img src="content/logo.png" alt="HP logo">
-  </div>
-  
-  <div id="footer-links">
-    <h3>Navigate</h3>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="my_art.html">My Arts</a>
-    <a href="photos.html">Photos</a>
-  </div>
-
-  <div id="footer-contact">
-    <h3>Contact</h3>
-    <a href="mailto:hannainthepark@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/hanna-park-453b66354/" target="_blank">LinkedIn</a>
-  </div>
-
-</footer>
   
   </body>
 </html>
