@@ -11,13 +11,12 @@
     
     <style>
       body {
-        background: #F1FF94;
+      background: #F1FF94;
       }
       .wrapper {
       width: 1200px;
       margin: 0 auto;
       background: white;
-      /*overflow: hidden;*/
       }
       
       nav {
@@ -30,9 +29,10 @@
       }
       
       #logo img {
-      height: 60px; /* adjust this to whatever size looks right */
+      height: 60px; 
       width: auto;
       transition: transform 0.2s ease;
+      float: left;
       }
 
       #logo img:hover {
@@ -59,20 +59,18 @@
       font-family: "Englebert", sans-serif;
       color: #DB5893;
       background:#D0EDEF;
-      /*border: 2px solid lightblue;*/
       padding: 5px 12px;
       font-size: 1.5em;
-      display: inline-block; /* ← add this */
-      transition: transform 0.2s ease; /* ← add this */
+      display: inline-block; 
+      transition: transform 0.2s ease; 
       }
       
       nav ul a:hover {
-      transform: scale(1.1); /* gets 20% bigger on hover */
+      transform: scale(1.1);
       }
-      
-      /* AI (Claude) Assisted */
+
       nav ul a.current {
-      background: #DB5893; /* swap the background to pink */
+      background: #DB5893; 
       color: white;
       }
       
@@ -89,7 +87,7 @@
       }
       
       #hero {
-      position: relative; /*AI (Claude) Assisted*/
+      position: relative; 
       margin-top: -130px;
       overflow: hidden;
       }
@@ -100,7 +98,7 @@
       right: 45%;
       padding: 90px;
       padding-top: 170px;
-      z-index: 1; /*AI (Claude) Assisted*/
+      z-index: 1; 
       margin-top: 0px;
       }
       
@@ -110,7 +108,7 @@
       right: 20%;
       padding: 250px;
       padding-top: 170px;
-      z-index: 1; /*AI (Claude) Assisted*/
+      z-index: 1; 
       margin-top: 0px;
       }
 
@@ -175,119 +173,117 @@
       }
       
       
-   #photo-viewer {
-  display: flex;
-  height: 700px;
-  margin: 40px 0;
-  gap: 0;
-  width: 100%; /* make sure it fits inside wrapper */
-  overflow: hidden; /* prevent sidebar from spilling out */
-}
+      #photo-viewer {
+      display: flex;
+      height: 700px;
+      margin: 40px 0;
+      gap: 0;
+      width: 100%; 
+      overflow: hidden;
+      }
 
-/* LEFT SIDE - main preview + thumbnails */
-#photo-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background: #f5f5f5;
-  border: 1px solid #eee;
-}
 
-#photo-preview {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  overflow: hidden;
-}
+      #photo-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #f5f5f5;
+      border: 1px solid #eee;
+      }
 
-#photo-preview img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
+      #photo-preview {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow: hidden;
+      }
 
-/* THUMBNAIL STRIP */
-#thumbnail-strip {
-  height: 100px;
-  display: flex;
-  gap: 8px;
-  padding: 10px;
-  overflow-x: scroll; /* change auto to scroll so scrollbar always shows */
-  background: #eee;
-  align-items: center;
-  scroll-behavior: smooth;
-  background: #D0EDEF;
-  /* style the scrollbar */
-  scrollbar-width: thin;
-  scrollbar-color: #DB5893 #eee;
-}
+      #photo-preview img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      }
 
-/* for Chrome */
-#thumbnail-strip::-webkit-scrollbar {
-  height: 6px;
-}
-#thumbnail-strip::-webkit-scrollbar-thumb {
-  background: #DB5893;
-  border-radius: 3px;
-}
+      #thumbnail-strip {
+      height: 100px;
+      display: flex;
+      gap: 8px;
+      padding: 10px;
+      overflow-x: scroll; 
+      background: #eee;
+      align-items: center;
+      scroll-behavior: smooth;
+      background: #D0EDEF;
+      scrollbar-width: thin;
+      scrollbar-color: #DB5893 #eee;
+      }
 
-#thumbnail-strip img {
-  height: 75px;
-  width: auto;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.2s ease;
-  flex-shrink: 0;
-  border: 2px solid transparent;
-}
+    /* for Chrome */
+      #thumbnail-strip::-webkit-scrollbar {
+      height: 6px;
+      }
+      #thumbnail-strip::-webkit-scrollbar-thumb {
+      background: #DB5893;
+      border-radius: 3px;
+      }
 
-#thumbnail-strip img:hover,
-#thumbnail-strip img.active {
-  opacity: 1;
-  border: 2px solid #DB5893;
-}
+      #thumbnail-strip img {
+      height: 75px;
+      width: auto;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+      flex-shrink: 0;
+      border: 2px solid transparent;
+      }
 
-/* RIGHT SIDEBAR */
-#photo-sidebar {
-  width: 200px;
-  border-left: 1px solid #eee;
-  padding: 20px;
-  overflow-y: auto;
-  margin-top: 0px;
-}
+      #thumbnail-strip img:hover,
+      #thumbnail-strip img.active {
+      opacity: 1;
+      border: 2px solid #DB5893;
+      }
 
-#photo-sidebar h3 {
-  font-family: "Englebert", cursive;
-  color: #DB5893;
-  font-size: 1em;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #D0EDEF;
-  padding-bottom: 5px;
-}
 
-.album-btn {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: white;
-  border: none;
-  font-family: "Englebert", cursive;
-  color: #733362;
-  font-size: 1em;
-  padding: 8px 5px;
-  cursor: pointer;
-  border-bottom: 1px solid #f0f0f0;
-  transition: color 0.2s ease, background 0.2s ease;
-}
+      #photo-sidebar {
+      width: 200px;
+      border-left: 1px solid #eee;
+      padding: 20px;
+      overflow-y: auto;
+      margin-top: 0px;
+      }
 
-.album-btn:hover,
-.album-btn.active {
-  color: #DB5893;
-  background: #f9f0f5;
-}
+      #photo-sidebar h3 {
+      font-family: "Englebert", cursive;
+      color: #DB5893;
+      font-size: 1em;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #D0EDEF;
+      padding-bottom: 5px;
+      }
+
+      .album-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: white;
+      border: none;
+      font-family: "Englebert", cursive;
+      color: #733362;
+      font-size: 1em;
+      padding: 8px 5px;
+      cursor: pointer;
+      border-bottom: 1px solid #f0f0f0;
+      transition: color 0.2s ease, background 0.2s ease;
+      }
+
+      .album-btn:hover,
+      .album-btn.active {
+      color: #DB5893;
+      background: #f9f0f5;
+      }
     
        footer {
       display: flex;
@@ -297,9 +293,9 @@
       background: #F1FF94;
       margin-top: 60px;
       gap: 150px;
-      margin-left: 40px; /* ← white gap on left */
-      margin-right: 40px; /* ← white gap on right */
-      margin-bottom: 40px; /* ← white gap on bottom */
+      margin-left: 40px; 
+      margin-right: 40px; 
+      margin-bottom: 40px; 
       }
 
       #footer-logo img {
@@ -371,18 +367,15 @@
       
       
 <div id="photo-viewer">
-
-  <!-- Left: main view + thumbnails -->
   <div id="photo-main">
     <div id="photo-preview">
       <img id="main-photo" src="content/photo1.jpg" alt="hello">
     </div>
     <div id="thumbnail-strip">
-      <!-- thumbnails injected by JS -->
     </div>
   </div>
 
-  <!-- Right: sidebar -->
+  <!-- Right sidebar -->
   <div id="photo-sidebar">
     <h3 style="color: #733362; font-family: 'Henny Penny', serif;">Albums</h3>
     <button class="album-btn active" onclick="loadAlbum('street')">Landscapes</button>
@@ -390,35 +383,33 @@
     <button class="album-btn" onclick="loadAlbum('portraits')">Sights</button>
     <button class="album-btn" onclick="loadAlbum('travel')">Food</button>
   </div>
-
 </div>
 
-      <footer>
-  <div id="footer-logo">
-    <img src="content/logo.png" alt="HP logo">
-  </div>
+  <footer>
+    <div id="footer-logo">
+      <img src="content/logo.png" alt="HP logo">
+    </div>
   
-  <div id="footer-links">
-    <h3>Navigate</h3>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="my_art.html">My Arts</a>
-    <a href="photos.html">Photos</a>
-  </div>
+    <div id="footer-links">
+      <h3>Navigate</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="my_art.html">My Arts</a>
+      <a href="photos.html">Photos</a>
+    </div>
 
-  <div id="footer-contact">
-    <h3>Contact</h3>
-    <a href="mailto:hannainthepark@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/hanna-park-453b66354/" target="_blank">LinkedIn</a>
-  </div>
+    <div id="footer-contact">
+      <h3>Contact</h3>
+      <a href="mailto:hannainthepark@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/hanna-park-453b66354/" target="_blank">LinkedIn</a>
+    </div>
 
-</footer>
-  </div>     
-    
-    
+  </footer>
+  </div>      
+  
+    <!-- AI (Claude) Assisted -->
     <script>
-  // Define your albums here — add your real image paths
-  const albums = {
+    const albums = {
     street: [
       'content/novascotia ocean.jpg',
       'content/landscape1.jpg',
@@ -429,9 +420,7 @@
       'content/fish in river.JPG',
       'content/stlucia car.JPG',
       'content/nova scotia field2.jpg',
-      
-      /*'content/nova scotia field.jpg',
-      'content/sea shells.JPG',*/
+    
     ],
     nature: [
       'content/moon.JPG',
@@ -464,7 +453,7 @@
       'content/vanilla pancake.JPG',
       'content/matcha pancake.JPG',
     ]
-  };
+    };
 
   const mainPhoto = document.getElementById('main-photo');
   const thumbnailStrip = document.getElementById('thumbnail-strip');
@@ -496,9 +485,6 @@
 
   // load first album on page load
   document.querySelector('.album-btn').click();
-</script>
-    
-    
-    
-  </body>
+  </script>
+</body>
 </html>

@@ -11,13 +11,14 @@
     
     <style>
       body {
-        background: #F1FF94;
+      background: #F1FF94;
       }
+      
       .wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  background: white;
-}
+      width: 1200px;
+      margin: 0 auto;
+      background: white;
+      }
       
       nav {
       display: flex;
@@ -29,9 +30,10 @@
       }
       
       #logo img {
-      height: 60px; /* adjust this to whatever size looks right */
+      height: 60px; 
       width: auto;
       transition: transform 0.2s ease;
+      float: left;
       }
 
       #logo img:hover {
@@ -58,20 +60,18 @@
       font-family: "Englebert", sans-serif;
       color: #DB5893;
       background: #D0EDEF;
-      /*border: 2px solid lightblue;*/
       padding: 5px 12px;
       font-size: 1.5em;
-      display: inline-block; /* ← add this */
-      transition: transform 0.2s ease; /* ← add this */
+      display: inline-block; 
+      transition: transform 0.2s ease; 
       }
       
       nav ul a:hover {
-      transform: scale(1.1); /* gets 20% bigger on hover */
+      transform: scale(1.1); 
       }
-      
-      /* AI (Claude) Assisted */
+
       nav ul a.current {
-      background: #DB5893; /* swap the background to pink */
+      background: #DB5893; 
       color: white;
       }
       
@@ -101,27 +101,27 @@
       }
       
       #hero {
-      position: relative; /*AI (Claude) Assisted*/
+      position: relative; 
       margin-top: -80px;
       background: white;
       height: 330px;
       }
 
       #hero-text {
-      position: absolute; /* lifts the text out of the normal flow */
+      position: absolute; 
       top: 0;
       left: 0;
       padding: 100px;
       padding-left: 150px;
-      z-index: 1; /* makes sure text sits on top of the image */
+      z-index: 1; 
       }
       
       .container {
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 2fr;; /* 3 columns */
-        grid-template-rows: repeat(3, 70px);  /* 2 rows */
-        gap: 40px; /* space between items */
+        grid-template-columns: 1fr 2fr;; 
+        grid-template-rows: repeat(3, 70px);  
+        gap: 40px; 
         padding: 0 120px;
         padding-bottom: 120px;
       }
@@ -140,9 +140,9 @@
       background: #F1FF94;
       margin-top: 60px;
       gap: 150px;
-      margin-left: 40px; /* ← white gap on left */
-      margin-right: 40px; /* ← white gap on right */
-      margin-bottom: 40px; /* ← white gap on bottom */
+      margin-left: 40px;
+      margin-right: 40px; 
+      margin-bottom: 40px; 
       }
 
       #footer-logo img {
@@ -205,11 +205,11 @@
     </div>
       
       <div class="container">
-        <div class="box"><h3>Who Am I?</h3></div>
+        <div class="box"><h3><i>Who Am I?</i></h3></div>
         <div class="box"><h4>My name is Hanna, Im a second year student at the University of Waterloo studying Global Business and Digital Arts. </h4></div>
-        <div class="box"><h3>What are my Inspirations?</h3></div>
+        <div class="box"><h3><i>What are my Inspirations?</i></h3></div>
         <div class="box"><h4>Movies have always served as a big inspiration for me. I also admire the artwork from various anime, manga, and video games, and most lately, music and fashion have had a major influence in my taste!</h4></div>
-        <div class="box"><h3>Why Design?</h3></div>
+        <div class="box"><h3><i>Why Design?</i></h3></div>
         <div class="box"><h4>The feeling I got as a kid when I watched or saw an amazing piece of media inspired me to create art myself. I’ve always practiced traditional art growing up, but digital tools like after effects and procreate opened up a whole new world to me. Since then, I’ve been on a journey to create media that gives others the same feeling of awe that I felt as a kid.</h4></div>
       </div>
       
@@ -233,8 +233,6 @@
   </div>
 
 </footer>
-    </div>
-
-     
+    </div>    
   </body>
 </html>
